@@ -32,6 +32,17 @@ local function setupAppearance()
     handle.Parent = hood
     hood.Parent = character
     character.Humanoid:AddAccessory(hood)
+
+    -- Adicionar terno (camisa e calça)
+    local shirt = Instance.new("Shirt")
+    shirt.Name = "TernoShirt"
+    shirt.ShirtTemplate = "rbxassetid://6077853148" -- ID da textura da camisa (terno preto)
+    shirt.Parent = character
+
+    local pants = Instance.new("Pants")
+    pants.Name = "TernoPants"
+    pants.PantsTemplate = "rbxassetid://6077856609" -- ID da textura da calça (terno preto)
+    pants.Parent = character
 end
 
 -- Função para criar a bola preta que expande
